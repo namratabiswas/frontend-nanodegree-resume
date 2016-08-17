@@ -1,9 +1,9 @@
 var bio = {
-    "name" : "Namrata Biswas",
-    "role" : "Front end Web Developer",
-    "welcomeMessage" : "I'm an aspiring Front-End Web Developer looking for awesome opportunities and I love coding!!",
-    "biopic" : "images/fry.jpg",
-    "contacts" : {
+    "name": "Namrata Biswas",
+    "role": "Front end Web Developer",
+    "welcomeMessage": "I'm an aspiring Front-End Web Developer looking for awesome opportunities and I love coding!!",
+    "biopic": "images/fry.jpg",
+    "contacts": {
         "mobile": "716-247-8238",
         "email": "namrata.itme@gmail.com",
         "github": "namratabiswas",
@@ -11,7 +11,7 @@ var bio = {
         "linkedin": "https://www.linkedin.com/in/jenniferfollero",
         "location": "San Jose, CA"
     },
-    "skills" : [, "JavaScript", "HTML", "CSS","jQuery", "bootstrap", "nodeJS"]
+    "skills": [, "JavaScript", "HTML", "CSS", "jQuery", "bootstrap", "nodeJS"]
 };
 
 bio.display = function() {
@@ -41,32 +41,28 @@ bio.display = function() {
 bio.display();
 
 var work = {
-    "jobs": [
-        {
-            "employer": "Voltas Limited",
-            "title": "Engineer,Business Development",
-            "location": "Kolkata,India",
-            "dates": "January 2011 - December 2012",
-            "description": "- Project timeline, cost, and execution management  - Project cost analysis in Matlab and Excel - Regular presentations to existing and potential clients .",
-            "url": "http://www.voltaslimited.com/"
-        },
-        {
-            "employer": "Mecon Limited",
-            "title": "Environmental data Analyst",
-            "location": "Ranchi,India",
-            "dates": "July 2009 - July 2010",
-            "description": "- Raw data collection and cleaning from air quality sensors - Collecting, monitoring, and analysis of waste water experimental results ",
-            "url": "http://meconlimited.com/"
-        },
-        {
-            "employer": "Jadavpur University",
-            "title": "Research Assistant",
-            "location": "Kolkata,India",
-            "dates": "July 2008 - May 2009",
-            "description": "Rigorous detailed oriented experiment for production of Silver nanoparticles from Silver Salt - Protein detection using spectrophotometer via DNS and Lowry procedure  ",
-            "url": "http://jadavpuruniversity.org/"
-        }
-    ]
+    "jobs": [{
+        "employer": "Voltas Limited",
+        "title": "Engineer,Business Development",
+        "location": "Kolkata,India",
+        "dates": "January 2011 - December 2012",
+        "description": "- Project timeline, cost, and execution management  - Project cost analysis in Matlab and Excel - Regular presentations to existing and potential clients .",
+        "url": "http://www.voltaslimited.com/"
+    }, {
+        "employer": "Mecon Limited",
+        "title": "Environmental data Analyst",
+        "location": "Ranchi,India",
+        "dates": "July 2009 - July 2010",
+        "description": "- Raw data collection and cleaning from air quality sensors - Collecting, monitoring, and analysis of waste water experimental results ",
+        "url": "http://meconlimited.com/"
+    }, {
+        "employer": "Jadavpur University",
+        "title": "Research Assistant",
+        "location": "Kolkata,India",
+        "dates": "July 2008 - May 2009",
+        "description": "Rigorous detailed oriented experiment for production of Silver nanoparticles from Silver Salt - Protein detection using spectrophotometer via DNS and Lowry procedure  ",
+        "url": "http://jadavpuruniversity.org/"
+    }]
 };
 
 work.display = function() {
@@ -87,8 +83,7 @@ work.display = function() {
 work.display();
 
 var education = {
-    "schools": [
-        {
+    "schools": [{
             "name": "West Bengal University of Technology",
             "location": "west Bengal,India",
             "degree": "B.Tech",
@@ -96,53 +91,49 @@ var education = {
             "dates": "July 2005-July 2009",
             "url": "https://www.wbut.org"
         }
-        
+
     ],
-    "onlineCourses": [
-        {
+    "onlineCourses": [{
             "title": "Front-End Web Developer Nanodegree",
             "school": "Udacity",
             "dates": "August 2016 - present",
             "url": "https://www.udacity.com"
-        },
-         {
+        }, {
             "title": "Object Oriented Javascript",
             "school": "Udacity",
             "dates": "February 2016",
             "url": "https://www.udacity.com"
-        },
-         {
+        }, {
             "title": "Javascript Basics",
             "school": "Udacity",
             "dates": "January 2016",
             "url": "https://www.udacity.com"
-        },
-         {
+        }, {
             "title": "How to use Git and Github",
             "school": "Udacity",
             "dates": "December 2015",
             "url": "https://www.udacity.com"
         },
-         
-            "title": "Intro to jQuery",
-            "school": "Udacity",
-            "dates": "November 2015",
-            "url": "https://www.udacity.com"
-        },
-         {
-            "title": "Responsive Images",
-            "school": "Udacity",
-            "dates": "October 2015",
-            "url": "https://www.udacity.com"
-        },
-         {
-            "title": "Intro to HTML and CSS",
-            "school": "Udacity",
-            "dates": "September 2015",
-            "url": "https://www.udacity.com"
-        }
-        
-    ]
+
+        "title": "Intro to jQuery",
+        "school": "Udacity",
+        "dates": "November 2015",
+        "url": "https://www.udacity.com"
+    },
+    {
+        "title": "Responsive Images",
+        "school": "Udacity",
+        "dates": "October 2015",
+        "url": "https://www.udacity.com"
+    },
+    {
+        "title": "Intro to HTML and CSS",
+        "school": "Udacity",
+        "dates": "September 2015",
+        "url": "https://www.udacity.com"
+    }
+
+]
 };
 
 education.display = function() {
@@ -172,14 +163,13 @@ education.display = function() {
 education.display();
 
 var projects = {
-    "projects": [
-    	{
+    "projects": [{
             "title": "Portfolio",
             "dates": "August 2016",
             "description": "Online portfolio to showcase projects built",
-            "url": "file:///C:/Users/Namrata/Desktop/Udacity%20Nanodegree/build_a_portfolio/index.html"  
+            "url": "file:///C:/Users/Namrata/Desktop/Udacity%20Nanodegree/build_a_portfolio/index.html"
         },
-        
+
         {
             "title": "Animal Trading Card",
             "dates": "June 2016",
@@ -187,29 +177,26 @@ var projects = {
             "images": ["images/animaltradingcard.png"],
             "url": "file:///C:/Users/Namrata/Desktop/Udacity%20Nanodegree/Animal%20Trading%20Cards/card.html"
         },
-        
+
         {
             "title": "Bubble Bursting Game",
             "dates": "November 2015",
             "description": "Interactive bubble bursting game using HTML,CSS,Javascript",
             "images": [" "],
             "url": "file:///C:/Users/Namrata/Downloads/bubble.html.html"
-        },
-        {
+        }, {
             "title": "Code Player",
             "dates": "November 2015",
             "description": "Similar to JS bin. Able to write HTML, CSS, and JS together and view the result and runs in the browser. ",
             "images": [" "],
             "url": "file:///C:/Users/Namrata/Downloads/jsbin.html.html"
-        },
-         {
+        }, {
             "title": "App Landing Page",
             "dates": "November 2015",
             "description": "Website where users can get information about your app and can download them.  ",
             "images": [" "],
             "url": "file:///C:/Users/Namrata/Downloads/app_landing.html.html"
-        },
-        {
+        }, {
             "title": "Weather Scraper",
             "dates": "January 2016",
             "description": " Website that works through Ajax and uses PHP to get the page content of a weather website and returns the content of the weather info of the city that the user puts in.   ",
@@ -221,18 +208,18 @@ var projects = {
 
 projects.display = function() {
     for (var i = 0; i < projects.projects.length; i++) {
-		$("#projects").append(HTMLprojectStart);
+        $("#projects").append(HTMLprojectStart);
 
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
         var formattedTitleLink = formattedTitle.replace("#", projects.projects[i].url);
         $(".project-entry:last").append(formattedTitleLink);
-		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
-		$(".project-entry:last").append(formattedDates);
-		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
-		$(".project-entry:last").append(formattedDescription);
+        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
+        $(".project-entry:last").append(formattedDates);
+        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
+        $(".project-entry:last").append(formattedDescription);
         var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images);
         $(".project-entry:last").append(formattedImage);
-	}
+    }
 };
 projects.display();
 
