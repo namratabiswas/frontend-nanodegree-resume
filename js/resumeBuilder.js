@@ -2,7 +2,7 @@ var bio = {
     "name" : "Namrata Biswas",
     "role" : "Front end Web Developer",
     "welcomeMessage" : "I'm an aspiring Front-End Web Developer looking for awesome opportunities and I love coding!!",
-    "biopic" : "images/fry.png",
+    "biopic" : "images/fry.jpg",
     "contacts" : {
         "mobile": "716-247-8238",
         "email": "namrata.itme@gmail.com",
