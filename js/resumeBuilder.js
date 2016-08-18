@@ -32,12 +32,23 @@ bio.display = function() {
     var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedMessage);
     
+    var formattedContactInfo = [];
+    formattedContactInfo.push(HTMLemail.replace("%data%", bio.contacts.email));
+    formattedContactInfo.push(HTMLgithub.replace("%data%", bio.contacts.github));
+    formattedContactInfo.push(HTMLtwitter.replace("%data%", bio.contacts.twitter));
+    formattedContactInfo.push(HTMLlocation.replace("%data%", bio.contacts.location));
+    
    
     $("#header").append(HTMLskillsStart);
     for (var i = 0; i < bio.skills.length; i++) {
         var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
         $("#skills:last").append(formattedSkills);
     }
+    for(i in formattedContactInfo) {
+	$("#topContacts").append(formattedContactInfo[i]);
+	$("#footerContacts").append(formattedContactInfo[i]);
+}
+    
 };
 bio.display();
 
@@ -177,6 +188,7 @@ var projects = {
             "title": "Portfolio",
             "dates": "August 2016",
             "description": "Online portfolio to showcase projects built",
+            "images": ["images/fry.jpg"],
             "url": "file:///C:/Users/Namrata/Desktop/Udacity%20Nanodegree/build_a_portfolio/index.html"
         },
 
@@ -184,6 +196,7 @@ var projects = {
             "title": "Animal Trading Card",
             "dates": "June 2016",
             "description": "Udacity project to create an animal trading card using HTML and CSS",
+            "images": ["images/fry.jpg"],
             "url": "file:///C:/Users/Namrata/Desktop/Udacity%20Nanodegree/Animal%20Trading%20Cards/card.html"
         },
 
@@ -191,25 +204,30 @@ var projects = {
             "title": "Bubble Bursting Game",
             "dates": "November 2015",
             "description": "Interactive bubble bursting game using HTML,CSS,Javascript",
+            "images": ["images/fry.jpg"],
             "url": "file:///C:/Users/Namrata/Downloads/bubble.html.html"
         }, 
         {
             "title": "Code Player",
             "dates": "November 2015",
             "description": "Similar to JS bin. Able to write HTML, CSS, and JS together and view the result and runs in the browser.",
+            "images": ["images/fry.jpg"],
             "url": "file:///C:/Users/Namrata/Downloads/jsbin.html.html"
         },
         {
             "title": "App Landing Page",
             "dates": "November 2015",
             "description": "Website where users can get information about your app and can download them.",
+            "images": ["images/fry.jpg"],
             "url": "file:///C:/Users/Namrata/Downloads/app_landing.html.html"
         }, 
         {
             "title": "Weather Scraper",
             "dates": "January 2016",
             "description": " Website that works through Ajax and uses PHP to get the page content of a weather website and returns the content of the weather info of the city that the user puts in.",
-            "url": "file:///C:/Users/Namrata/Downloads/weather.html.html"
+            "images": ["images/fry.jpg"],
+            "url": "file:///C:/Users/Namrata/Downloads/app_landing.html.html"
+           
         },
     ]
 };
