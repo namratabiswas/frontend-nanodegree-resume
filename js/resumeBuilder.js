@@ -90,9 +90,9 @@ var education = {
     "schools": [
         {
             "name": "West Bengal University of Technology",
-            "location": "west Bengal,India",
+            "location": "West Bengal,India",
             "degree": "B.Tech",
-            "majors": "Biotechnology",
+            "major": "Biotechnology",
             "dates": "July 2005-July 2009",
             "url": "https://www.wbut.org"
         }
@@ -128,20 +128,20 @@ var education = {
         "school": "Udacity",
         "dates": "November 2015",
         "url": "https://www.udacity.com"
-    },
-    {
+        },
+        {
         "title": "Responsive Images",
         "school": "Udacity",
         "dates": "October 2015",
         "url": "https://www.udacity.com"
-    },
-    {
+        },
+        {
         "title": "Intro to HTML and CSS",
         "school": "Udacity",
         "dates": "September 2015",
         "url": "https://www.udacity.com"
-    }
-]
+        }
+   ]
 };
 
 education.display = function() {
@@ -155,7 +155,7 @@ education.display = function() {
         var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[i].majors);
         var educationSchools = formattedNameLink + formattedDegree + formattedDates + formattedLocation + formattedMajor;
         $(".education-entry:last").append(educationSchools);
-    };
+    }
     $(".education-entry:last").append(HTMLonlineClasses);
     for (var i = 0; i < education.onlineCourses.length; i++) {
         var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
@@ -183,7 +183,6 @@ var projects = {
             "title": "Animal Trading Card",
             "dates": "June 2016",
             "description": "Udacity project to create an animal trading card using HTML and CSS",
-            "images": ["images/animaltradingcard.png"],
             "url": "file:///C:/Users/Namrata/Desktop/Udacity%20Nanodegree/Animal%20Trading%20Cards/card.html"
         },
 
@@ -191,28 +190,24 @@ var projects = {
             "title": "Bubble Bursting Game",
             "dates": "November 2015",
             "description": "Interactive bubble bursting game using HTML,CSS,Javascript",
-            "images": [" "],
             "url": "file:///C:/Users/Namrata/Downloads/bubble.html.html"
         }, 
         {
             "title": "Code Player",
             "dates": "November 2015",
-            "description": "Similar to JS bin. Able to write HTML, CSS, and JS together and view the result and runs in the browser. ",
-            "images": [" "],
+            "description": "Similar to JS bin. Able to write HTML, CSS, and JS together and view the result and runs in the browser.",
             "url": "file:///C:/Users/Namrata/Downloads/jsbin.html.html"
         },
         {
             "title": "App Landing Page",
             "dates": "November 2015",
-            "description": "Website where users can get information about your app and can download them.  ",
-            "images": [" "],
+            "description": "Website where users can get information about your app and can download them.",
             "url": "file:///C:/Users/Namrata/Downloads/app_landing.html.html"
         }, 
         {
             "title": "Weather Scraper",
             "dates": "January 2016",
-            "description": " Website that works through Ajax and uses PHP to get the page content of a weather website and returns the content of the weather info of the city that the user puts in.   ",
-            "images": [" "],
+            "description": " Website that works through Ajax and uses PHP to get the page content of a weather website and returns the content of the weather info of the city that the user puts in.",
             "url": "file:///C:/Users/Namrata/Downloads/weather.html.html"
         },
     ]
@@ -237,7 +232,7 @@ projects.display();
 
 $("#mapDiv").append(googleMap);
 
-var footerContacts = {
+/*var footerContacts = {
     "social": {
         "github": "https://github.com/namratabiswas",
         "twitter": "https://twitter.com/namratabiswas",
@@ -247,7 +242,7 @@ var footerContacts = {
 
 $("#footerContacts").append(HTMLfooterGithub.replace("#", footerContacts.social.github));
 $("#footerContacts").append(HTMLfooterTwitter.replace("#", footerContacts.social.twitter));
-$("#footerContacts").append(HTMLfooterLinkedin.replace("#", footerContacts.social.linkedin));
+$("#footerContacts").append(HTMLfooterLinkedin.replace("#", footerContacts.social.linkedin)); */
 
 // $("#main").append(internationalizeButton);
 
