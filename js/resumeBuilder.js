@@ -8,7 +8,7 @@ var bio = {
         "email": "namrata.itme@gmail.com",
         "github": "namratabiswas",
         "twitter": "@namratabiswas",
-        "linkedin": "https://www.linkedin.com/in/jenniferfollero",
+        "linkedin": "https://www.linkedin.com/in/namrata-biswas-18501323",
         "location": "San Jose, CA"
     },
     "skills": ["JavaScript", "HTML", "CSS", "jQuery", "bootstrap", "nodeJS"]
@@ -31,6 +31,11 @@ bio.display = function() {
     $("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
     var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedMessage);
+    
+    for(i in formattedContactInfo) {
+	$("#topContacts").append(formattedContactInfo[i]);
+	$("#footerContacts").append(formattedContactInfo[i]);
+}
 
     $("#header").append(HTMLskillsStart);
     for (var i = 0; i < bio.skills.length; i++) {
